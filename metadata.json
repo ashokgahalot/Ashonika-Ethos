@@ -1,0 +1,6 @@
+{
+  "name": "Ashonika Ethos",
+  "description": "Ashonika Ethos is a modern Indian conscious-living brand inspired by nature, traditional wisdom and thoughtfully made products. Discover our first Multani Mitti collection — launching soon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
