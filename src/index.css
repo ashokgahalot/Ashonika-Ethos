@@ -3,22 +3,24 @@
 @theme {
   --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --color-brand-red: #C81E1E;
-  --color-brand-red-hover: #A81616;
-  --color-brand-navy: #122348;
-  --color-brand-navy-dark: #0A1428;
-  --color-canvas-white: #FCFDFF;
-  --color-canvas-subtle: #F6F8FB;
-  --color-border-subtle: #E2E6EE;
-  --color-text-primary: #0F1E36;
-  --color-text-secondary: #475569;
+  --color-brand-red: #D81A27;
+  --color-brand-red-hover: #B8121D;
+  --color-brand-red-light: #FEF2F2;
+  --color-brand-blue: #0C2D79;
+  --color-brand-blue-hover: #081F54;
+  --color-brand-blue-light: #EFF6FF;
+  --color-canvas-white: #FFFFFF;
+  --color-canvas-subtle: #F8FAFC;
+  --color-border-subtle: #E2E8F0;
+  --color-text-primary: #0B172B;
+  --color-text-secondary: #4B5563;
 }
 
 @layer base {
   body {
     font-family: var(--font-sans);
-    color: #0F1E36;
-    background-color: #FCFDFF;
+    color: #0B172B;
+    background-color: #FFFFFF;
   }
   h1, h2, h3, h4, .font-serif {
     font-family: var(--font-serif);
@@ -36,4 +38,15 @@
 }
 .group:hover .img-zoom {
   transform: scale(1.03);
+}
+
+/* Beveled dimensional text effect reminiscent of the 3D logo */
+.logo-text-red {
+  color: #D81A27;
+  text-shadow: 0 1px 2px rgba(184, 18, 29, 0.25);
+}
+
+.logo-text-blue {
+  color: #0C2D79;
+  text-shadow: 0 1px 2px rgba(12, 45, 121, 0.25);
 }

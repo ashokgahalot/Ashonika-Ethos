@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Instagram, Facebook, Linkedin, ArrowUp, X } from 'lucide-react';
+import { Instagram, Facebook, Youtube, ArrowUp, X } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
@@ -15,21 +15,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
 
   return (
     <>
-      <footer className="bg-[#0A1428] text-white pt-14 sm:pt-16 pb-12 border-t border-[#122348]">
+      <footer className="bg-[#081636] text-white pt-14 sm:pt-16 pb-12 border-t border-[#0C2D79]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 pb-12 border-b border-white/10">
-            {/* Brand Column */}
+            {/* Brand Column with Clean Typographic Wordmark */}
             <div className="md:col-span-5 space-y-4">
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl sm:text-3xl font-serif tracking-tight font-semibold text-[#C81E1E]">
+              <div className="flex items-baseline select-none">
+                <span className="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-[#FF6B75]">
                   Ashonika
                 </span>
-                <span className="text-xs font-sans tracking-[0.25em] text-[#93C5FD] font-bold uppercase">
+                <span className="text-xs font-sans font-bold tracking-[0.35em] text-[#93C5FD] uppercase ml-2.5">
                   Ethos
                 </span>
               </div>
 
-              <p className="text-sm font-serif italic text-[#CBD5E1]">
+              <p className="text-sm font-serif italic text-[#E0E7FF] pt-1">
                 Conscious choices, beautifully made.
               </p>
 
@@ -37,37 +37,37 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
                 A modern Indian brand celebrating natural ingredients, traditional knowledge, simplicity, sustainability, and beautiful everyday living.
               </p>
 
-              {/* Social Media Links: Only Instagram, Facebook, Pinterest, Linkedin */}
-              <div className="pt-2 flex items-center gap-2.5 sm:gap-3">
+              {/* Social Media Links: Instagram, Facebook, Pinterest, and Youtube */}
+              <div className="pt-2 flex items-center gap-3">
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ashonika_ethos"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Ashonika Ethos on Instagram"
-                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#CBD5E1] hover:text-white hover:bg-[#C81E1E] active:scale-95 transition-all"
+                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#E0E7FF] hover:text-white hover:bg-[#D81A27] active:scale-95 transition-all"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
 
                 {/* Facebook */}
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/people/Ashonika-Ethos/61580419386156/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Ashonika Ethos on Facebook"
-                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#CBD5E1] hover:text-white hover:bg-[#C81E1E] active:scale-95 transition-all"
+                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#E0E7FF] hover:text-white hover:bg-[#D81A27] active:scale-95 transition-all"
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
 
                 {/* Pinterest */}
                 <a
-                  href="https://pinterest.com"
+                  href="https://in.pinterest.com/ashonika_ethos/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Ashonika Ethos on Pinterest"
-                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#CBD5E1] hover:text-white hover:bg-[#C81E1E] active:scale-95 transition-all"
+                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#E0E7FF] hover:text-white hover:bg-[#D81A27] active:scale-95 transition-all"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
@@ -78,52 +78,52 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
                   </svg>
                 </a>
 
-                {/* Linkedin */}
+                {/* Youtube */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.youtube.com/channel/UChQY_8zOeXesAEHQwaOit3A"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Ashonika Ethos on LinkedIn"
-                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#CBD5E1] hover:text-white hover:bg-[#C81E1E] active:scale-95 transition-all"
+                  aria-label="Ashonika Ethos on YouTube"
+                  className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center text-[#E0E7FF] hover:text-white hover:bg-[#D81A27] active:scale-95 transition-all"
                 >
-                  <Linkedin className="w-4 h-4" />
+                  <Youtube className="w-4 h-4" />
                 </a>
               </div>
             </div>
 
             {/* Quick Navigation Links */}
             <div className="md:col-span-3 space-y-3">
-              <span className="text-xs uppercase tracking-[0.25em] text-[#C81E1E] font-bold block mb-2">
+              <span className="text-xs uppercase tracking-[0.25em] text-[#FF4D58] font-bold block mb-2">
                 Explore
               </span>
-              <ul className="space-y-2.5 text-xs text-[#CBD5E1]">
+              <ul className="space-y-2.5 text-xs text-[#E0E7FF]">
                 <li>
-                  <a href="#home" className="hover:text-white hover:text-[#FCA5A5] transition-colors py-1 inline-block">
+                  <a href="#home" className="hover:text-white hover:text-[#FECACA] transition-colors py-1 inline-block">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#collection" className="hover:text-white hover:text-[#FCA5A5] transition-colors py-1 inline-block">
+                  <a href="#collection" className="hover:text-white hover:text-[#FECACA] transition-colors py-1 inline-block">
                     Collection (Launching Soon)
                   </a>
                 </li>
                 <li>
-                  <a href="#ethos" className="hover:text-white hover:text-[#FCA5A5] transition-colors py-1 inline-block">
+                  <a href="#ethos" className="hover:text-white hover:text-[#FECACA] transition-colors py-1 inline-block">
                     Our Ethos
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="hover:text-white hover:text-[#FCA5A5] transition-colors py-1 inline-block">
+                  <a href="#about" className="hover:text-white hover:text-[#FECACA] transition-colors py-1 inline-block">
                     About Ashonika Ethos
                   </a>
                 </li>
                 <li>
-                  <a href="#ingredients" className="hover:text-white hover:text-[#FCA5A5] transition-colors py-1 inline-block">
+                  <a href="#ingredients" className="hover:text-white hover:text-[#FECACA] transition-colors py-1 inline-block">
                     Ingredients Story
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-white hover:text-[#FCA5A5] transition-colors py-1 inline-block">
+                  <a href="#contact" className="hover:text-white hover:text-[#FECACA] transition-colors py-1 inline-block">
                     Contact
                   </a>
                 </li>
@@ -132,7 +132,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
 
             {/* Launch Status Column */}
             <div className="md:col-span-4 space-y-3">
-              <span className="text-xs uppercase tracking-[0.25em] text-[#C81E1E] font-bold block mb-2">
+              <span className="text-xs uppercase tracking-[0.25em] text-[#FF4D58] font-bold block mb-2">
                 Inaugural Release
               </span>
               <p className="text-xs text-[#94A3B8] leading-relaxed font-light">
@@ -140,7 +140,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
               </p>
               <button
                 onClick={onOpenNotify}
-                className="mt-3 min-h-[44px] px-6 py-2.5 bg-[#C81E1E] hover:bg-[#A81616] text-white text-xs uppercase tracking-wider font-semibold rounded-full transition-all shadow-sm"
+                className="mt-3 min-h-[44px] px-6 py-2.5 bg-[#D81A27] hover:bg-[#B8121D] text-white text-xs uppercase tracking-wider font-bold rounded-full transition-all shadow-md"
               >
                 Join Waitlist
               </button>
@@ -186,26 +186,26 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0A1428]/70 backdrop-blur-xs"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#081636]/75 backdrop-blur-xs"
           onClick={() => setLegalModal(null)}
         >
           <div
-            className="bg-white text-[#0F1E36] p-6 sm:p-8 rounded-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto border border-[#E2E8F0] shadow-2xl relative"
+            className="bg-white text-[#0B172B] p-6 sm:p-8 rounded-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto border border-[#E2E8F0] shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setLegalModal(null)}
               aria-label="Close dialog"
-              className="absolute top-4 right-4 p-2 text-[#64748B] hover:text-[#0F1E36] rounded-full hover:bg-[#F1F5F9] transition-colors"
+              className="absolute top-4 right-4 p-2 text-[#64748B] hover:text-[#0B172B] rounded-full hover:bg-[#F8FAFC] transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
 
-            <h3 className="text-2xl font-serif mb-4 text-[#0F1E36]">
+            <h3 className="text-2xl font-serif mb-4 text-[#0B172B]">
               {legalModal === 'privacy' ? 'Privacy Policy' : 'Terms & Conditions'}
             </h3>
 
-            <div className="text-xs text-[#475569] space-y-3 leading-relaxed">
+            <div className="text-xs text-[#4B5563] space-y-3 leading-relaxed">
               {legalModal === 'privacy' ? (
                 <>
                   <p>
@@ -236,7 +236,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
             <div className="mt-6 pt-4 border-t border-[#E2E8F0] flex justify-end">
               <button
                 onClick={() => setLegalModal(null)}
-                className="min-h-[40px] px-6 py-2 bg-[#122348] text-white text-xs font-semibold rounded-full hover:bg-[#0A1428]"
+                className="min-h-[40px] px-6 py-2 bg-[#0C2D79] text-white text-xs font-bold rounded-full hover:bg-[#081F54]"
               >
                 Close
               </button>

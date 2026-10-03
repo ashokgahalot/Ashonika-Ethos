@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- 3D Bevel Lighting Filter for Scarlet Red Lacquer -->
+    <filter id="bevelRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5" result="blur"/>
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant="1.2" specularExponent="22" lighting-color="#FFFFFF" result="specular">
+        <fePointLight x="400" y="-150" z="350"/>
+      </feSpecularLighting>
+      <feComposite in="specular" in2="SourceAlpha" operator="in" result="specularHighlight"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#550005" flood-opacity="0.6"/>
+      <feBlend in="SourceGraphic" in2="specularHighlight" mode="screen"/>
+    </filter>
+
+    <!-- 3D Bevel Lighting Filter for Royal Cobalt Blue -->
+    <filter id="bevelBlue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.8" result="blurBlue"/>
+      <feSpecularLighting in="blurBlue" surfaceScale="4.5" specularConstant="1.4" specularExponent="25" lighting-color="#FFFFFF" result="specularBlue">
+        <fePointLight x="600" y="-120" z="280"/>
+      </feSpecularLighting>
+      <feComposite in="specularBlue" in2="SourceAlpha" operator="in" result="specularBlueHighlight"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#020924" flood-opacity="0.7"/>
+      <feBlend in="SourceGraphic" in2="specularBlueHighlight" mode="screen"/>
+    </filter>
+
+    <!-- Rich Red Lacquer Gradient -->
+    <linearGradient id="redLacquer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF3847"/>
+      <stop offset="25%" stop-color="#E51A29"/>
+      <stop offset="65%" stop-color="#C70E1B"/>
+      <stop offset="100%" stop-color="#80040E"/>
+    </linearGradient>
+
+    <!-- Royal Cobalt Blue Gradient -->
+    <linearGradient id="blueCobalt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B71F7"/>
+      <stop offset="30%" stop-color="#1446C9"/>
+      <stop offset="70%" stop-color="#0B2B8A"/>
+      <stop offset="100%" stop-color="#051654"/>
+    </linearGradient>
+
+    <!-- Stroke highlight for extra 3D rim effect -->
+    <linearGradient id="rimRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA4AC"/>
+      <stop offset="50%" stop-color="#E51A29"/>
+      <stop offset="100%" stop-color="#60020A"/>
+    </linearGradient>
+
+    <linearGradient id="rimBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BC0FF"/>
+      <stop offset="50%" stop-color="#1446C9"/>
+      <stop offset="100%" stop-color="#040E36"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Group 1: ASHONIKA with flourishes -->
+  <g id="ashonika-group" filter="url(#bevelRed)">
+    <!-- Swash decorative path connecting through the letters -->
+    <!-- 'A' with ornate left tail curl -->
+    <path d="M 120 250 C 90 250 65 235 60 215 C 55 190 85 180 115 190 C 130 195 145 210 160 225 L 210 120 C 220 95 240 85 260 90 C 275 95 285 110 295 130 L 350 255 C 360 275 375 285 395 285 C 410 285 415 275 405 260 L 325 110 C 310 80 290 60 255 55 C 220 50 195 70 175 110 L 110 240 C 95 270 115 295 150 290 C 175 285 195 265 210 245 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- Flourished Crossbar loop of A -->
+    <path d="M 180 210 C 220 205 260 200 300 210 C 315 215 320 230 305 235 C 275 245 220 240 180 210 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1"/>
+
+    <!-- 'S' with calligraphic swashes interlocking -->
+    <path d="M 335 155 C 315 130 310 95 340 75 C 370 55 415 70 415 105 C 415 135 375 155 350 170 C 320 190 305 215 320 245 C 335 275 385 285 425 260 C 445 245 455 225 445 215 C 435 205 420 215 410 225 C 385 245 355 240 345 225 C 335 210 345 195 370 180 C 410 155 445 130 435 90 C 425 50 375 35 330 50 C 290 65 285 115 305 150 C 315 165 330 165 335 155 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- 'H' with top serif and elegant cross connector -->
+    <path d="M 450 75 L 485 75 L 485 150 C 510 145 540 145 565 150 L 565 75 L 600 75 L 600 255 L 565 255 L 565 185 C 540 190 510 190 485 185 L 485 255 L 450 255 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- 'O' with smooth classic proportions -->
+    <path d="M 670 65 C 620 65 590 105 590 165 C 590 225 620 265 670 265 C 720 265 750 225 750 165 C 750 105 720 65 670 65 Z M 670 100 C 695 100 710 125 710 165 C 710 205 695 230 670 230 C 645 230 630 205 630 165 C 630 125 645 100 670 100 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- 'N' with sweeping underloop swooping all the way under I and K -->
+    <path d="M 750 80 L 785 80 L 785 160 L 860 80 L 895 80 L 895 220 C 895 260 870 290 820 300 C 740 315 620 300 540 275 C 500 262 485 235 505 220 C 525 205 550 215 585 225 C 655 245 765 260 825 250 C 850 245 860 230 860 205 L 860 145 L 785 225 L 750 225 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- 'I' with traditional finial -->
+    <path d="M 915 80 L 950 80 L 950 255 L 915 255 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- 'K' with upper looping arm and lower swash -->
+    <path d="M 975 75 L 1010 75 L 1010 155 L 1065 75 L 1115 75 L 1045 165 L 1125 255 L 1075 255 L 1010 180 L 1010 255 L 975 255 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- Upper loop of K flourishing into the top space -->
+    <path d="M 1060 90 C 1040 40 980 30 940 50 C 920 60 915 75 930 80 C 945 85 960 75 975 65 C 995 55 1025 60 1040 95 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1"/>
+
+    <!-- Terminal 'A' with elegant flourish -->
+    <path d="M 1110 255 L 1145 125 C 1150 105 1165 95 1180 95 C 1195 95 1200 110 1195 130 L 1165 255 Z M 1125 195 L 1175 195 L 1150 135 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+
+    <!-- Bottom grand flourish tail under ASHONIKA -->
+    <path d="M 230 250 C 180 300 230 330 300 320 C 370 310 400 270 380 250 C 365 235 345 240 340 255 C 335 270 315 285 280 285 C 240 285 220 265 235 245 Z" fill="url(#redLacquer)" stroke="url(#rimRed)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Group 2: ETHOS in bold 3D beveled royal cobalt blue -->
+  <g id="ethos-group" filter="url(#bevelBlue)">
+    <text x="600" y="420" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="115" font-weight="700" letter-spacing="0.32em" fill="url(#blueCobalt)" stroke="url(#rimBlue)" stroke-width="1.8" text-anchor="middle">
+      ETHOS
+    </text>
+  </g>
+</svg>

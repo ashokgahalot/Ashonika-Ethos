@@ -50,7 +50,7 @@ export default function App() {
         {/* 3. Launching Soon Announcement Banner */}
         <LaunchingBanner onOpenNotify={handleOpenGeneralNotify} />
 
-        {/* 4. Product Showcase Collection */}
+        {/* 4. Product Showcase Collection with Staggered Entrance */}
         <ProductGrid
           onNotifyProduct={handleNotifyProduct}
           onOpenGeneralNotify={handleOpenGeneralNotify}
@@ -59,22 +59,22 @@ export default function App() {
         {/* 5. Editorial Botanical Flatlay Visual */}
         <CollectionVisual />
 
-        {/* 6. Philosophy & Our Ethos */}
+        {/* 6. Philosophy & Our Ethos with Staggered Entrance */}
         <OurEthos />
 
-        {/* 7. Brand Story & About Section */}
+        {/* 7. Brand Story & About Section with Staggered Entrance */}
         <AboutSection />
 
-        {/* 8. Ingredients with a Story */}
+        {/* 8. Ingredients with a Story with Staggered Entrance */}
         <IngredientStory />
 
-        {/* 9. Better Choices & Sustainability */}
+        {/* 9. Better Choices & Sustainability with Staggered Entrance */}
         <SustainabilitySection />
 
-        {/* 10. Email Signup / Be Part of the Beginning */}
+        {/* 10. Email Signup / Be Part of the Beginning with Staggered Entrance */}
         <NewsletterSection />
 
-        {/* 11. Contact & Inquiries */}
+        {/* 11. Contact & Inquiries with Staggered Entrance */}
         <ContactSection />
       </main>
 

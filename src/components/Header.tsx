@@ -32,16 +32,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-[#E2E8F0] py-3.5'
-            : 'bg-transparent py-5'
+            ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-[#E2E8F0] py-3'
+            : 'bg-transparent py-4 sm:py-5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Zone 1: Brand Wordmark */}
+            {/* Zone 1: Brand Wordmark (Clean Editorial Typography, No Image) */}
             <a
               href="#home"
-              className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C81E1E] rounded-md"
+              className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D81A27] rounded-md py-1"
               aria-label="Ashonika Ethos Home"
             >
               <BrandLogo size="sm" />
@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-xs font-medium tracking-wider uppercase text-[#475569] hover:text-[#C81E1E] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-[#C81E1E] hover:after:w-full after:transition-all"
+                  className="text-xs font-semibold tracking-wider uppercase text-[#4B5563] hover:text-[#D81A27] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#D81A27] hover:after:w-full after:transition-all"
                 >
                   {link.label}
                 </a>
@@ -61,12 +61,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
             </nav>
 
             {/* Zone 3: Primary Action */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               <button
                 onClick={onOpenNotify}
-                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase text-[#C81E1E] bg-[#FEF2F2] hover:bg-[#FEE2E2] active:scale-[0.98] border border-[#FECACA] rounded-full transition-all"
+                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-bold tracking-wider uppercase text-[#D81A27] bg-[#FEF2F2] hover:bg-[#FEE2E2] active:scale-[0.98] border border-[#FECACA] rounded-full transition-all"
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#C81E1E]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#D81A27]" />
                 <span>Launching Soon</span>
               </button>
 
@@ -75,7 +75,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
                 aria-expanded={mobileMenuOpen}
-                className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-[#0F1E36] hover:bg-[#F1F5F9] rounded-xl transition-colors"
+                className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-[#0B172B] hover:bg-[#F8FAFC] rounded-xl transition-colors border border-transparent hover:border-[#E2E8F0]"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -98,14 +98,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
               <div className="flex items-center justify-between border-b border-[#E2E8F0] pb-4">
                 <div>
                   <BrandLogo size="sm" />
-                  <p className="text-[11px] text-[#64748B] italic mt-1 font-serif">
+                  <p className="text-[11px] text-[#64748B] italic mt-1.5 font-serif">
                     Conscious choices, beautifully made.
                   </p>
                 </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   aria-label="Close Navigation"
-                  className="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#64748B] hover:text-[#0F1E36] hover:bg-[#F1F5F9] transition-colors"
+                  className="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#64748B] hover:text-[#0B172B] hover:bg-[#F8FAFC] transition-colors"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -117,7 +117,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="min-h-[44px] flex items-center px-2 text-sm font-medium tracking-wide uppercase text-[#0F1E36] hover:text-[#C81E1E] hover:bg-[#FEF2F2] rounded-lg transition-colors"
+                    className="min-h-[44px] flex items-center px-2.5 text-sm font-semibold tracking-wide uppercase text-[#0B172B] hover:text-[#D81A27] hover:bg-[#FEF2F2] rounded-lg transition-colors"
                   >
                     {link.label}
                   </a>
@@ -131,7 +131,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                   setMobileMenuOpen(false);
                   onOpenNotify();
                 }}
-                className="w-full min-h-[46px] py-3 px-4 bg-[#C81E1E] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#A81616] active:scale-[0.99] transition-colors text-center flex items-center justify-center shadow-xs"
+                className="w-full min-h-[46px] py-3 px-4 bg-[#D81A27] text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#B8121D] active:scale-[0.99] transition-colors text-center flex items-center justify-center shadow-xs"
               >
                 Launching Soon — Notify Me
               </button>
