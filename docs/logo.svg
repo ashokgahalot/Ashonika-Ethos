@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2132 1000" width="2132" height="1000">
+  <defs>
+    <style>
+      .ethos-text {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 255px;
+        letter-spacing: 0.04em;
+        fill: #169A38;
+      }
+      .serif-text {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.32em;
+        fill: #EE2424;
+      }
+      .script-text {
+        font-family: 'Alex Brush', cursive;
+        font-style: italic;
+        font-size: 82px;
+        fill: #EE2424;
+      }
+    </style>
+  </defs>
+
+  <!-- Clean Pure White Background -->
+  <rect width="2132" height="1000" fill="#FFFFFF" />
+
+  <!-- 1. Top-Left Red Corner Bracket -->
+  <path d="M 138 470 L 138 165 L 480 165" stroke="#EE2424" stroke-width="14" stroke-linecap="square" fill="none" />
+
+  <!-- 2. Bottom-Right Red Corner Bracket -->
+  <path d="M 1675 770 L 1980 770 L 1980 470" stroke="#EE2424" stroke-width="14" stroke-linecap="square" fill="none" />
+
+  <!-- 3. The Word "ETHOS" in Heavy Rounded Green Letters -->
+  <text x="580" y="560" class="ethos-text">ETHOS</text>
+
+  <!-- 4. Green Lightbulb on the Left -->
+  <g id="bulb" transform="translate(400, 468)">
+    <!-- Bulb Glass Dome -->
+    <path
+      d="M 75 -95 C -15 -95 -25 -25 -25 0 C -25 25 -15 95 75 95 C 110 95 130 70 150 48 L 150 -48 C 130 -70 110 -95 75 -95 Z"
+      fill="#169A38"
+    />
+    <circle cx="70" cy="0" r="85" fill="#169A38" />
+
+    <!-- Screw Collar Ridges on Right of Bulb -->
+    <rect x="150" y="-46" width="18" height="92" rx="6" fill="#169A38" />
+    <rect x="174" y="-40" width="16" height="80" rx="6" fill="#169A38" />
+    <rect x="195" y="-32" width="15" height="64" rx="5" fill="#169A38" />
+
+    <!-- Two Crisp White Leaves Inside Bulb -->
+    <!-- Stem -->
+    <path d="M 60 42 C 55 24 62 4 78 -12 C 94 -28 112 -38 116 -58" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none" />
+    <!-- Upper Leaf -->
+    <path d="M 72 0 C 66 -36 94 -60 128 -62 C 130 -30 106 -4 72 0 Z" fill="#FFFFFF" />
+    <!-- Lower Leaf -->
+    <path d="M 58 20 C 32 2 37 -22 66 -28 C 72 -7 70 12 58 20 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- 5. Horizontal Capsule Pill Banner Passing Through ETHOS -->
+  <g id="banner">
+    <!-- Pure White Capsule with Green Border -->
+    <rect x="585" y="440" width="1245" height="56" rx="28" fill="#FFFFFF" stroke="#169A38" stroke-width="6" />
+
+    <!-- Red Heart Icon ❤️ Centered Between H and O -->
+    <path
+      d="M 1010 468 C 1010 458 1000 451 990 451 C 980 451 974 457 971 463 C 968 457 962 451 952 451 C 942 451 932 458 932 468 C 932 482 951 493 971 505 C 991 493 1010 482 1010 468 Z"
+      fill="#EE2424"
+    />
+
+    <!-- Text: BY ASHONIKA in Red Serif Small Caps -->
+    <text
+      x="1420"
+      y="479"
+      class="serif-text"
+      text-anchor="middle"
+    >
+      BY ASHONIKA
+    </text>
+  </g>
+
+  <!-- 6. Tagline in Flowing Red Cursive Script -->
+  <text
+    x="1150"
+    y="735"
+    class="script-text"
+    text-anchor="middle"
+  >
+    Conscious Choices, Beautifully Made
+  </text>
+</svg>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Instagram, Facebook, Youtube, ArrowUp, X } from 'lucide-react';
-import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
   onOpenNotify: () => void;
@@ -18,13 +17,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenNotify }) => {
       <footer className="bg-[#0A1F10] text-white pt-14 sm:pt-16 pb-12 border-t border-[#169A38]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 pb-12 border-b border-white/10">
-            {/* Brand Column with Clean Typographic Wordmark & Logo */}
-            <div className="md:col-span-5 space-y-4">
-              <div className="bg-white/95 p-3 rounded-xl inline-block max-w-[280px]">
-                <BrandLogo size="sm" showBrackets={false} />
-              </div>
+            {/* Brand Column */}
+            <div className="md:col-span-5 space-y-3">
+              <h3 className="font-serif text-2xl tracking-wide text-white font-normal">
+                Ashonika Ethos
+              </h3>
 
-              <p className="text-sm font-script italic text-[#BBF7D0] pt-1 text-base">
+              <p className="text-sm font-script italic text-[#BBF7D0] text-base">
                 Conscious Choices, Beautifully Made
               </p>
 

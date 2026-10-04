@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowDown, Sparkles, Feather } from 'lucide-react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { BrandLogo } from './BrandLogo';
 import heroImage from '../assets/images/hero_girl_multani_clay_1791122200427.jpg';
 import { getSectionHeaderVariants, getStaggerContainerVariants, getStaggerItemVariants } from '../utils/motion';
 
@@ -34,14 +33,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenNotify }) => {
             className="lg:col-span-6 flex flex-col justify-center text-left"
           >
             {/* Status Kicker / Badge */}
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-[#F0FDF4] border border-[#BBF7D0] text-[11px] sm:text-xs uppercase tracking-[0.2em] font-bold text-[#169A38] mb-4 shadow-2xs">
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-[#F0FDF4] border border-[#BBF7D0] text-[11px] sm:text-xs uppercase tracking-[0.2em] font-bold text-[#169A38] mb-4 sm:mb-6 shadow-2xs">
               <span className="w-1.5 h-1.5 rounded-full bg-[#169A38] animate-pulse" />
               <span>First Collection — Launching Soon</span>
-            </motion.div>
-
-            {/* Official Logo Image */}
-            <motion.div variants={itemVariants} className="mb-6 self-start max-w-xs sm:max-w-sm">
-              <BrandLogo size="lg" />
             </motion.div>
 
             {/* Editorial Heading */}

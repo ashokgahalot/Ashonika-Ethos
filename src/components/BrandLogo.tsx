@@ -3,21 +3,22 @@ import logoImg from '../assets/images/logo.png';
 
 interface BrandLogoProps {
   className?: string;
-  size?: 'sm' | 'md' | 'lg' | 'hero';
+  size?: 'sm' | 'md' | 'lg' | 'hero' | 'header';
   showTagline?: boolean;
   showBrackets?: boolean;
 }
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({
   className = '',
-  size = 'md',
+  size = 'header',
 }) => {
   // Height sizing to fit different header / hero / footer placements
   const sizeClasses = {
-    sm: 'h-9 sm:h-10 w-auto object-contain',
-    md: 'h-14 sm:h-16 w-auto object-contain',
-    lg: 'h-20 sm:h-24 w-auto object-contain',
-    hero: 'h-24 sm:h-32 md:h-36 w-auto object-contain max-w-full',
+    sm: 'h-10 sm:h-12 w-auto object-contain',
+    header: 'h-16 sm:h-20 md:h-24 w-auto object-contain max-w-[280px] sm:max-w-xs',
+    md: 'h-16 sm:h-20 w-auto object-contain',
+    lg: 'h-24 sm:h-28 w-auto object-contain',
+    hero: 'h-28 sm:h-36 md:h-44 w-auto object-contain max-w-full',
   };
 
   return (

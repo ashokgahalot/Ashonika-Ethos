@@ -31,19 +31,19 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-[#E2E8F0] py-3'
-            : 'bg-transparent py-4 sm:py-5'
+            ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-[#E2E8F0] py-2 sm:py-2.5'
+            : 'bg-white/85 backdrop-blur-xs py-3 sm:py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Zone 1: Brand Logo */}
+            {/* Zone 1: Brand Logo - Location 1 (Enlarged and Clear) */}
             <a
               href="#home"
-              className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#169A38] rounded-md py-1"
+              className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#169A38] rounded-md py-0.5"
               aria-label="Ashonika Ethos Home"
             >
-              <BrandLogo size="sm" />
+              <BrandLogo size="header" />
             </a>
 
             {/* Zone 2: Clean Typography Navigation */}
@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-4">
                 <div>
-                  <BrandLogo size="sm" />
+                  <BrandLogo size="md" />
                 </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
