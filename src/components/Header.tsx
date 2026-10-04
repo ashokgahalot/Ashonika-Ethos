@@ -23,7 +23,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
     { label: 'Collection', href: '#collection' },
     { label: 'Our Ethos', href: '#ethos' },
     { label: 'About', href: '#about' },
-    { label: 'Ingredients', href: '#ingredients' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -38,10 +37,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Zone 1: Brand Wordmark (Clean Editorial Typography, No Image) */}
+            {/* Zone 1: Brand Logo */}
             <a
               href="#home"
-              className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D81A27] rounded-md py-1"
+              className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#169A38] rounded-md py-1"
               aria-label="Ashonika Ethos Home"
             >
               <BrandLogo size="sm" />
@@ -53,7 +52,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-xs font-semibold tracking-wider uppercase text-[#4B5563] hover:text-[#D81A27] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#D81A27] hover:after:w-full after:transition-all"
+                  className="text-xs font-semibold tracking-wider uppercase text-[#47554A] hover:text-[#169A38] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#169A38] hover:after:w-full after:transition-all"
                 >
                   {link.label}
                 </a>
@@ -64,9 +63,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
             <div className="flex items-center gap-2 sm:gap-3">
               <button
                 onClick={onOpenNotify}
-                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-bold tracking-wider uppercase text-[#D81A27] bg-[#FEF2F2] hover:bg-[#FEE2E2] active:scale-[0.98] border border-[#FECACA] rounded-full transition-all"
+                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-bold tracking-wider uppercase text-[#EF2626] bg-[#FEF2F2] hover:bg-[#FEE2E2] active:scale-[0.98] border border-[#FECACA] rounded-full transition-all"
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#D81A27]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#EF2626]" />
                 <span>Launching Soon</span>
               </button>
 
@@ -75,9 +74,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
                 aria-expanded={mobileMenuOpen}
-                className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-[#0B172B] hover:bg-[#F8FAFC] rounded-xl transition-colors border border-transparent hover:border-[#E2E8F0]"
+                className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-[#111F15] hover:bg-[#F0FDF4] rounded-xl transition-colors border border-transparent hover:border-[#BBF7D0]"
               >
-                {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                {mobileMenuOpen ? <X className="w-5 h-5 text-[#111F15]" /> : <Menu className="w-5 h-5 text-[#111F15]" />}
               </button>
             </div>
           </div>
@@ -87,25 +86,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 z-50 bg-[#0A1428]/50 backdrop-blur-xs md:hidden"
+          className="fixed inset-0 z-50 bg-[#0D2413]/60 backdrop-blur-xs md:hidden"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div
-            className="fixed top-0 right-0 bottom-0 w-4/5 max-w-xs bg-white border-l border-[#E2E8F0] p-6 flex flex-col justify-between shadow-2xl animate-in slide-in-from-right duration-200 overflow-y-auto"
+            className="fixed top-0 right-0 bottom-0 w-4/5 max-w-xs bg-white border-l border-[#E5E7EB] p-6 flex flex-col justify-between shadow-2xl animate-in slide-in-from-right duration-200 overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-6">
-              <div className="flex items-center justify-between border-b border-[#E2E8F0] pb-4">
+              <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-4">
                 <div>
                   <BrandLogo size="sm" />
-                  <p className="text-[11px] text-[#64748B] italic mt-1.5 font-serif">
-                    Conscious choices, beautifully made.
-                  </p>
                 </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   aria-label="Close Navigation"
-                  className="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#64748B] hover:text-[#0B172B] hover:bg-[#F8FAFC] transition-colors"
+                  className="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#6B7280] hover:text-[#111F15] hover:bg-[#F0FDF4] transition-colors"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -117,7 +113,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="min-h-[44px] flex items-center px-2.5 text-sm font-semibold tracking-wide uppercase text-[#0B172B] hover:text-[#D81A27] hover:bg-[#FEF2F2] rounded-lg transition-colors"
+                    className="min-h-[44px] flex items-center px-2.5 text-sm font-semibold tracking-wide uppercase text-[#111F15] hover:text-[#169A38] hover:bg-[#F0FDF4] rounded-lg transition-colors"
                   >
                     {link.label}
                   </a>
@@ -125,13 +121,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotify }) => {
               </nav>
             </div>
 
-            <div className="pt-6 border-t border-[#E2E8F0] space-y-3">
+            <div className="pt-6 border-t border-[#E5E7EB] space-y-3">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenNotify();
                 }}
-                className="w-full min-h-[46px] py-3 px-4 bg-[#D81A27] text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#B8121D] active:scale-[0.99] transition-colors text-center flex items-center justify-center shadow-xs"
+                className="w-full min-h-[46px] py-3 px-4 bg-[#EF2626] text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#D61B1B] active:scale-[0.99] transition-colors text-center flex items-center justify-center shadow-xs"
               >
                 Launching Soon — Notify Me
               </button>

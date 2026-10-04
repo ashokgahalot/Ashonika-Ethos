@@ -8,11 +8,8 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { LaunchingBanner } from './components/LaunchingBanner';
 import { ProductGrid } from './components/ProductGrid';
-import { CollectionVisual } from './components/CollectionVisual';
 import { OurEthos } from './components/OurEthos';
 import { AboutSection } from './components/AboutSection';
-import { IngredientStory } from './components/IngredientStory';
-import { SustainabilitySection } from './components/SustainabilitySection';
 import { NewsletterSection } from './components/NewsletterSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -39,7 +36,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FCFDFF] text-[#0F1E36] flex flex-col selection:bg-[#C81E1E]/15 selection:text-[#C81E1E]">
+    <div className="min-h-screen bg-white text-[#111F15] flex flex-col selection:bg-[#169A38]/15 selection:text-[#169A38]">
       {/* 1. Header / Navigation */}
       <Header onOpenNotify={handleOpenGeneralNotify} />
 
@@ -56,32 +53,23 @@ export default function App() {
           onOpenGeneralNotify={handleOpenGeneralNotify}
         />
 
-        {/* 5. Editorial Botanical Flatlay Visual */}
-        <CollectionVisual />
-
-        {/* 6. Philosophy & Our Ethos with Staggered Entrance */}
+        {/* 5. Philosophy & Our Ethos with Staggered Entrance */}
         <OurEthos />
 
-        {/* 7. Brand Story & About Section with Staggered Entrance */}
+        {/* 6. Brand Story & About Section with Staggered Entrance */}
         <AboutSection />
 
-        {/* 8. Ingredients with a Story with Staggered Entrance */}
-        <IngredientStory />
-
-        {/* 9. Better Choices & Sustainability with Staggered Entrance */}
-        <SustainabilitySection />
-
-        {/* 10. Email Signup / Be Part of the Beginning with Staggered Entrance */}
+        {/* 7. Email Signup / Be Part of the Beginning with Staggered Entrance */}
         <NewsletterSection />
 
-        {/* 11. Contact & Inquiries with Staggered Entrance */}
+        {/* 8. Contact & Inquiries with Staggered Entrance */}
         <ContactSection />
       </main>
 
-      {/* 12. Footer */}
+      {/* 9. Footer */}
       <Footer onOpenNotify={handleOpenGeneralNotify} />
 
-      {/* 13. Interactive Launch Notification Modal */}
+      {/* 10. Interactive Launch Notification Modal */}
       <NotifyModal
         isOpen={notifyModalOpen}
         onClose={handleCloseModal}

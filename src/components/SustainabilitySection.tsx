@@ -14,30 +14,30 @@ export const SustainabilitySection: React.FC = () => {
       title: 'Minimal Packaging',
       description:
         'Eliminating secondary plastic wraps and gratuitous boxes. We aim to keep packaging as minimal and essential as possible.',
-      icon: <Package className="w-5 h-5 text-[#D81A27]" />,
+      icon: <Package className="w-5 h-5 text-[#EF2626]" />,
     },
     {
       title: 'Paper-Based Materials',
       description:
         'Prioritizing high-yield unbleached kraft and recyclable paper components where practical and protective for fine powders.',
-      icon: <Recycle className="w-5 h-5 text-[#0C2D79]" />,
+      icon: <Recycle className="w-5 h-5 text-[#169A38]" />,
     },
     {
       title: 'Reduced Excess',
       description:
         'Refusing ornamental plastic spatulas, excessive flyers, and disposable inserts. Every design decision serves an intentional utility.',
-      icon: <Feather className="w-5 h-5 text-[#D81A27]" />,
+      icon: <Feather className="w-5 h-5 text-[#EF2626]" />,
     },
     {
       title: 'Reusable Vessels',
       description:
         'Developing durable amber glass jars and ceramic containers meant to be refilled, repurposed, or kept on your vanity.',
-      icon: <RefreshCw className="w-5 h-5 text-[#0C2D79]" />,
+      icon: <RefreshCw className="w-5 h-5 text-[#169A38]" />,
     },
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#F8FAFC] border-t border-[#E2E8F0] overflow-hidden">
+    <section className="py-20 sm:py-28 bg-[#FBFDFB] border-t border-[#E5E7EB] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Animated Section Header */}
         <motion.div
@@ -47,17 +47,17 @@ export const SustainabilitySection: React.FC = () => {
           variants={headerVariants}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] uppercase text-[#D81A27] mb-3">
-            <span className="w-6 h-px bg-[#FECACA]" />
+          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] uppercase text-[#169A38] mb-3">
+            <span className="w-6 h-px bg-[#BBF7D0]" />
             <span>Responsible Development</span>
-            <span className="w-6 h-px bg-[#FECACA]" />
+            <span className="w-6 h-px bg-[#BBF7D0]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#0B172B] font-normal tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#111F15] font-normal tracking-tight mb-4">
             Better choices, thoughtfully considered.
           </h2>
 
-          <p className="text-sm sm:text-base text-[#4B5563] font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#47554A] font-light leading-relaxed">
             Conscious living is not about perfection or trendy buzzwords; it is about continuous, responsible choices. As we prepare our launch, we are interrogating every material choice with intention.
           </p>
         </motion.div>
@@ -74,22 +74,22 @@ export const SustainabilitySection: React.FC = () => {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="p-7 bg-white border border-[#E2E8F0] rounded-2xl flex flex-col justify-between shadow-2xs hover:shadow-md transition-shadow duration-300"
+              className="p-7 bg-white border border-[#E5E7EB] rounded-2xl flex flex-col justify-between shadow-2xs hover:shadow-md transition-shadow duration-300"
             >
               <div>
-                <div className="p-3 bg-[#F8FAFC] rounded-xl w-fit mb-5 border border-[#E2E8F0]">
+                <div className="p-3 bg-[#F0FDF4] rounded-xl w-fit mb-5 border border-[#BBF7D0]">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-serif text-[#0B172B] font-bold tracking-tight mb-2">
+                <h3 className="text-lg font-serif text-[#111F15] font-bold tracking-tight mb-2">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#4B5563] font-light leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#47554A] font-light leading-relaxed">
                   {item.description}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-[#E2E8F0] flex items-center gap-2 text-[11px] text-[#64748B]">
-                <Check className="w-3.5 h-3.5 text-[#D81A27]" />
+              <div className="mt-6 pt-4 border-t border-[#E5E7EB] flex items-center gap-2 text-[11px] text-[#6B7280]">
+                <Check className="w-3.5 h-3.5 text-[#169A38]" />
                 <span>In Prototype Evaluation</span>
               </div>
             </motion.div>
@@ -97,7 +97,7 @@ export const SustainabilitySection: React.FC = () => {
         </motion.div>
 
         {/* Responsible Stewardship Note */}
-        <div className="mt-12 text-center max-w-xl mx-auto text-xs text-[#4B5563] bg-white p-4 rounded-xl border border-[#E2E8F0]">
+        <div className="mt-12 text-center max-w-xl mx-auto text-xs text-[#47554A] bg-white p-4 rounded-xl border border-[#E5E7EB]">
           We believe in honest transparency: we are testing practical, recyclable, and reusable materials without making unverified sweeping claims.
         </div>
       </div>

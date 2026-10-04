@@ -9,7 +9,7 @@ export const AboutSection: React.FC = () => {
   const headerVariants = getSectionHeaderVariants(shouldReduceMotion);
 
   return (
-    <section id="about" className="py-20 sm:py-28 bg-[#F8FAFC] border-t border-[#E2E8F0] overflow-hidden">
+    <section id="about" className="py-20 sm:py-28 bg-[#FBFDFB] border-t border-[#E5E7EB] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Image with craftsmanship storytelling */}
@@ -21,18 +21,18 @@ export const AboutSection: React.FC = () => {
             className="lg:col-span-6 relative"
           >
             <div className="relative mx-auto max-w-lg lg:max-w-none">
-              <div className="relative aspect-4/3 sm:aspect-1/1 lg:aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#E2E8F0] bg-white group">
+              <div className="relative aspect-4/3 sm:aspect-1/1 lg:aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#E5E7EB] bg-white group">
                 <img
                   src={aboutImage}
                   alt="Artisan hands gently sifting soft Multani Mitti clay powder through a wooden sieve over a ceramic bowl"
                   className="w-full h-full object-cover img-zoom"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1428]/50 via-transparent to-transparent opacity-40 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F10]/50 via-transparent to-transparent opacity-40 pointer-events-none" />
 
                 {/* Subdued overlay plaque */}
-                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E2E8F0] text-[#0B172B] shadow-xs">
-                  <div className="text-[11px] uppercase tracking-[0.2em] text-[#D81A27] font-bold mb-1">
+                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E5E7EB] text-[#111F15] shadow-xs">
+                  <div className="text-[11px] uppercase tracking-[0.2em] text-[#169A38] font-bold mb-1">
                     Artisanal Patience
                   </div>
                   <p className="font-serif text-sm sm:text-base italic">
@@ -51,16 +51,16 @@ export const AboutSection: React.FC = () => {
             variants={headerVariants}
             className="lg:col-span-6 flex flex-col justify-center text-left"
           >
-            <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] uppercase text-[#D81A27] mb-3">
-              <span className="w-6 h-px bg-[#FECACA]" />
+            <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] uppercase text-[#169A38] mb-3">
+              <span className="w-6 h-px bg-[#BBF7D0]" />
               <span>About Ashonika Ethos</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#0B172B] font-normal tracking-tight leading-[1.15] mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#111F15] font-normal tracking-tight leading-[1.15] mb-6">
               A new-age brand with an old-world connection.
             </h2>
 
-            <div className="space-y-4 text-base text-[#4B5563] font-light leading-relaxed">
+            <div className="space-y-4 text-base text-[#47554A] font-light leading-relaxed">
               <p>
                 Ashonika Ethos brings together the simplicity of nature, the richness of Indian traditions and the sensibility of modern conscious living.
               </p>
@@ -70,18 +70,18 @@ export const AboutSection: React.FC = () => {
             </div>
 
             {/* Prominent secondary line as required */}
-            <div className="mt-8 pt-6 border-t border-[#E2E8F0]">
-              <p className="text-xl sm:text-2xl font-serif text-[#D81A27] italic font-semibold">
+            <div className="mt-8 pt-6 border-t border-[#E5E7EB]">
+              <p className="text-xl sm:text-2xl font-serif text-[#EF2626] italic font-semibold">
                 “This is only the beginning.”
               </p>
-              <p className="text-xs uppercase tracking-[0.25em] text-[#0C2D79] mt-1 font-sans font-bold">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#169A38] mt-1 font-sans font-bold">
                 Volume 01 · Multani Mitti Collection
               </p>
             </div>
 
             {/* Heritage note */}
-            <div className="mt-8 flex items-center gap-4 text-xs text-[#4B5563] bg-white p-4 rounded-xl border border-[#E2E8F0] shadow-2xs">
-              <Flower2 className="w-5 h-5 text-[#D81A27] shrink-0" />
+            <div className="mt-8 flex items-center gap-4 text-xs text-[#47554A] bg-white p-4 rounded-xl border border-[#E5E7EB] shadow-2xs">
+              <Flower2 className="w-5 h-5 text-[#169A38] shrink-0" />
               <span>
                 Rooted in authentic Indian wellness customs, formulated with restraint and packaged for modern living spaces.
               </span>

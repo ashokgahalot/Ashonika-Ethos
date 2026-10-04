@@ -11,10 +11,10 @@ export const OurEthos: React.FC = () => {
   const itemVariants = getStaggerItemVariants(shouldReduceMotion);
 
   const icons = [
-    <HeartHandshake key="heart" className="w-5 h-5 text-[#D81A27]" />,
-    <Compass key="compass" className="w-5 h-5 text-[#0C2D79]" />,
-    <Feather key="feather" className="w-5 h-5 text-[#D81A27]" />,
-    <Sparkles key="sparkles" className="w-5 h-5 text-[#0C2D79]" />,
+    <HeartHandshake key="heart" className="w-5 h-5 text-[#EF2626]" />,
+    <Compass key="compass" className="w-5 h-5 text-[#169A38]" />,
+    <Feather key="feather" className="w-5 h-5 text-[#EF2626]" />,
+    <Sparkles key="sparkles" className="w-5 h-5 text-[#169A38]" />,
   ];
 
   return (
@@ -28,17 +28,17 @@ export const OurEthos: React.FC = () => {
           variants={headerVariants}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] uppercase text-[#D81A27] mb-3">
-            <span className="w-6 h-px bg-[#FECACA]" />
+          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.25em] uppercase text-[#169A38] mb-3">
+            <span className="w-6 h-px bg-[#BBF7D0]" />
             <span>Guiding Philosophy</span>
-            <span className="w-6 h-px bg-[#FECACA]" />
+            <span className="w-6 h-px bg-[#BBF7D0]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#0B172B] font-normal tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#111F15] font-normal tracking-tight mb-4">
             Our Ethos
           </h2>
 
-          <p className="text-sm sm:text-base text-[#4B5563] font-light leading-relaxed max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-[#47554A] font-light leading-relaxed max-w-xl mx-auto">
             Ashonika Ethos was born from a desire to harmonize daily personal care with intentional, ancestral wisdom and respect for the earth.
           </p>
         </motion.div>
@@ -55,37 +55,37 @@ export const OurEthos: React.FC = () => {
             <motion.div
               key={principle.number}
               variants={itemVariants}
-              className="relative p-8 bg-white border border-[#E2E8F0] rounded-2xl flex flex-col justify-between hover:border-[#D81A27]/40 hover:shadow-md transition-shadow duration-300"
+              className="relative p-8 bg-white border border-[#E5E7EB] rounded-2xl flex flex-col justify-between hover:border-[#169A38]/50 hover:shadow-md transition-all duration-300"
             >
               <div>
                 {/* Header with Number and Line Art Icon */}
-                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E2E8F0]">
-                  <span className="font-serif text-2xl text-[#D81A27] font-bold">
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5E7EB]">
+                  <span className="font-serif text-2xl text-[#169A38] font-bold">
                     {principle.number}
                   </span>
-                  <div className="p-2.5 rounded-full bg-[#F8FAFC] border border-[#E2E8F0]">
+                  <div className="p-2.5 rounded-full bg-[#F0FDF4] border border-[#BBF7D0]">
                     {icons[index % icons.length]}
                   </div>
                 </div>
 
                 {/* Principle Title */}
-                <h3 className="text-2xl font-serif text-[#0B172B] tracking-tight mb-3">
+                <h3 className="text-2xl font-serif text-[#111F15] tracking-tight mb-3">
                   {principle.title}
                 </h3>
 
                 {/* Direct Quote from User Brief */}
-                <blockquote className="text-sm italic font-serif text-[#0B172B]/90 leading-relaxed mb-4 border-l-2 border-[#D81A27] pl-3">
+                <blockquote className="text-sm italic font-serif text-[#111F15]/90 leading-relaxed mb-4 border-l-2 border-[#EF2626] pl-3">
                   “{principle.quote}”
                 </blockquote>
 
                 {/* Nuanced description */}
-                <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#47554A] leading-relaxed">
                   {principle.description}
                 </p>
               </div>
 
               {/* Subdued anchor label */}
-              <div className="mt-8 pt-4 border-t border-[#E2E8F0] text-[11px] uppercase tracking-wider text-[#94A3B8]">
+              <div className="mt-8 pt-4 border-t border-[#E5E7EB] text-[11px] uppercase tracking-wider text-[#9CA3AF]">
                 Principle {principle.number} of 04
               </div>
             </motion.div>

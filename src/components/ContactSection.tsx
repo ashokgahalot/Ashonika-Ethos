@@ -40,17 +40,17 @@ export const ContactSection: React.FC = () => {
           variants={headerVariants}
           className="text-center max-w-2xl mx-auto mb-10 sm:mb-14"
         >
-          <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs font-bold tracking-[0.25em] uppercase text-[#D81A27] mb-3">
-            <span className="w-6 h-px bg-[#FECACA]" />
+          <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs font-bold tracking-[0.25em] uppercase text-[#169A38] mb-3">
+            <span className="w-6 h-px bg-[#BBF7D0]" />
             <span>Get in Touch</span>
-            <span className="w-6 h-px bg-[#FECACA]" />
+            <span className="w-6 h-px bg-[#BBF7D0]" />
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-[#0B172B] font-normal tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-[#111F15] font-normal tracking-tight mb-3 sm:mb-4">
             Connect with Ashonika Ethos.
           </h2>
 
-          <p className="text-xs sm:text-sm md:text-base text-[#4B5563] font-light leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base text-[#47554A] font-light leading-relaxed">
             Have questions about our upcoming Multani Mitti collection or wish to learn more about our brand philosophy? Send us a note below.
           </p>
         </motion.div>
@@ -61,13 +61,13 @@ export const ContactSection: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, margin: '-40px' }}
           variants={headerVariants}
-          className="bg-[#F8FAFC] p-5 sm:p-8 md:p-10 rounded-2xl border border-[#E2E8F0] shadow-xs"
+          className="bg-[#FBFDFB] p-5 sm:p-8 md:p-10 rounded-2xl border border-[#E5E7EB] shadow-xs"
         >
           {sent ? (
             <div className="text-center py-8 sm:py-12">
-              <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 text-[#D81A27] mx-auto mb-3 sm:mb-4" />
-              <h3 className="text-xl sm:text-2xl font-serif text-[#0B172B] mb-2">Message Received</h3>
-              <p className="text-xs sm:text-sm text-[#4B5563] max-w-md mx-auto mb-6">
+              <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 text-[#169A38] mx-auto mb-3 sm:mb-4" />
+              <h3 className="text-xl sm:text-2xl font-serif text-[#111F15] mb-2">Message Received</h3>
+              <p className="text-xs sm:text-sm text-[#47554A] max-w-md mx-auto mb-6">
                 Thank you for reaching out. We will read your message and respond with care.
               </p>
               <button
@@ -75,7 +75,7 @@ export const ContactSection: React.FC = () => {
                   setSent(false);
                   setForm({ name: '', email: '', message: '' });
                 }}
-                className="min-h-[44px] px-6 py-2.5 bg-[#0C2D79] text-white text-xs uppercase tracking-wider font-bold rounded-full hover:bg-[#081F54] transition-colors"
+                className="min-h-[44px] px-6 py-2.5 bg-[#169A38] text-white text-xs uppercase tracking-wider font-bold rounded-full hover:bg-[#11772B] transition-colors"
               >
                 Send another message
               </button>
@@ -84,7 +84,7 @@ export const ContactSection: React.FC = () => {
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="contact-name" className="block text-xs font-semibold text-[#4B5563] mb-1.5">
+                  <label htmlFor="contact-name" className="block text-xs font-semibold text-[#47554A] mb-1.5">
                     Your Name
                   </label>
                   <input
@@ -94,11 +94,11 @@ export const ContactSection: React.FC = () => {
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     placeholder="e.g. Ananya Sen"
-                    className="w-full min-h-[44px] px-4 py-2.5 bg-white border border-[#CBD5E1] rounded-xl text-sm text-[#0B172B] focus:outline-none focus:ring-1 focus:ring-[#D81A27] focus:border-[#D81A27] transition-all"
+                    className="w-full min-h-[44px] px-4 py-2.5 bg-white border border-[#D1D5DB] rounded-xl text-sm text-[#111F15] focus:outline-none focus:ring-1 focus:ring-[#169A38] focus:border-[#169A38] transition-all"
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-email" className="block text-xs font-semibold text-[#4B5563] mb-1.5">
+                  <label htmlFor="contact-email" className="block text-xs font-semibold text-[#47554A] mb-1.5">
                     Email Address
                   </label>
                   <input
@@ -108,13 +108,13 @@ export const ContactSection: React.FC = () => {
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     placeholder="ananya@example.com"
-                    className="w-full min-h-[44px] px-4 py-2.5 bg-white border border-[#CBD5E1] rounded-xl text-sm text-[#0B172B] focus:outline-none focus:ring-1 focus:ring-[#D81A27] focus:border-[#D81A27] transition-all"
+                    className="w-full min-h-[44px] px-4 py-2.5 bg-white border border-[#D1D5DB] rounded-xl text-sm text-[#111F15] focus:outline-none focus:ring-1 focus:ring-[#169A38] focus:border-[#169A38] transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="contact-message" className="block text-xs font-semibold text-[#4B5563] mb-1.5">
+                <label htmlFor="contact-message" className="block text-xs font-semibold text-[#47554A] mb-1.5">
                   Your Message
                 </label>
                 <textarea
@@ -124,7 +124,7 @@ export const ContactSection: React.FC = () => {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Share your thoughts or questions with us..."
-                  className="w-full p-4 bg-white border border-[#CBD5E1] rounded-xl text-sm text-[#0B172B] focus:outline-none focus:ring-1 focus:ring-[#D81A27] focus:border-[#D81A27] transition-all resize-y"
+                  className="w-full p-4 bg-white border border-[#D1D5DB] rounded-xl text-sm text-[#111F15] focus:outline-none focus:ring-1 focus:ring-[#169A38] focus:border-[#169A38] transition-all resize-y"
                 />
               </div>
 
@@ -132,7 +132,7 @@ export const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full min-h-[46px] py-3.5 px-6 bg-[#D81A27] text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#B8121D] active:scale-[0.99] transition-all flex items-center justify-center gap-2 group disabled:opacity-75 shadow-md"
+                  className="w-full min-h-[46px] py-3.5 px-6 bg-[#EF2626] text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#D61B1B] active:scale-[0.99] transition-all flex items-center justify-center gap-2 group disabled:opacity-75 shadow-md"
                 >
                   <Send className="w-3.5 h-3.5" />
                   <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>

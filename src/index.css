@@ -3,27 +3,37 @@
 @theme {
   --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --color-brand-red: #D81A27;
-  --color-brand-red-hover: #B8121D;
+  --font-script: "Alex Brush", "Dancing Script", cursive;
+
+  --color-brand-green: #169A38;
+  --color-brand-green-hover: #11772B;
+  --color-brand-green-dark: #0D5F22;
+  --color-brand-green-light: #F0FDF4;
+  --color-brand-green-border: #BBF7D0;
+
+  --color-brand-red: #EF2626;
+  --color-brand-red-hover: #D61B1B;
   --color-brand-red-light: #FEF2F2;
-  --color-brand-blue: #0C2D79;
-  --color-brand-blue-hover: #081F54;
-  --color-brand-blue-light: #EFF6FF;
+  --color-brand-red-border: #FECACA;
+
   --color-canvas-white: #FFFFFF;
-  --color-canvas-subtle: #F8FAFC;
-  --color-border-subtle: #E2E8F0;
-  --color-text-primary: #0B172B;
-  --color-text-secondary: #4B5563;
+  --color-canvas-subtle: #FBFDFB;
+  --color-border-subtle: #E5E7EB;
+  --color-text-primary: #111F15;
+  --color-text-secondary: #47554A;
 }
 
 @layer base {
   body {
     font-family: var(--font-sans);
-    color: #0B172B;
+    color: #111F15;
     background-color: #FFFFFF;
   }
   h1, h2, h3, h4, .font-serif {
     font-family: var(--font-serif);
+  }
+  .font-script {
+    font-family: var(--font-script);
   }
 }
 
@@ -38,15 +48,4 @@
 }
 .group:hover .img-zoom {
   transform: scale(1.03);
-}
-
-/* Beveled dimensional text effect reminiscent of the 3D logo */
-.logo-text-red {
-  color: #D81A27;
-  text-shadow: 0 1px 2px rgba(184, 18, 29, 0.25);
-}
-
-.logo-text-blue {
-  color: #0C2D79;
-  text-shadow: 0 1px 2px rgba(12, 45, 121, 0.25);
 }

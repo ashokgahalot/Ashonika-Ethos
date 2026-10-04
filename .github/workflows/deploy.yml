@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -37,14 +37,33 @@ jobs:
       - name: Build production site
         run: npm run build
 
+      - name: Ensure CNAME, 404 and .nojekyll in dist
+        run: |
+          echo "ethos.ashonika.com" > dist/CNAME
+          touch dist/.nojekyll
+          cp dist/index.html dist/404.html
+
+      # Method 1: Official GitHub Actions deployment (when Settings -> Pages -> Source is GitHub Actions)
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        continue-on-error: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
         with:
           path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+
+      # Method 2: Deploy to gh-pages branch (works automatically even if Source is Deploy from Branch)
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: ethos.ashonika.com
+          keep_files: false
