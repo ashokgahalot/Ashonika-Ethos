@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="100%" height="100%" fill="none">
+  <rect width="1000" height="440" fill="#FFFFFF" rx="8" />
+  <path d="M 64 210 L 64 74 L 260 74" stroke="#EF2626" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter" />
+  <path d="M 740 366 L 936 366 L 936 230" stroke="#EF2626" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter" />
+  <g id="lightbulb-icon">
+    <path d="M 185 170 C 130 170 134 225 134 225 C 134 225 130 280 185 280 C 208 280 220 262 232 250 L 232 200 C 220 188 208 170 185 170 Z" fill="#169A38" />
+    <circle cx="178" cy="225" r="46" fill="#169A38" />
+    <rect x="230" y="196" width="10" height="58" rx="4" fill="#169A38" />
+    <rect x="243" y="199" width="9" height="52" rx="3.5" fill="#169A38" />
+    <rect x="255" y="204" width="8" height="42" rx="3" fill="#169A38" />
+    <path d="M 174 246 C 172 236 176 224 186 214 C 196 204 206 198 208 186" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 183 222 C 180 200 196 186 215 184 C 216 202 202 218 183 222 Z" fill="#FFFFFF" />
+    <path d="M 174 235 C 160 224 163 210 180 207 C 183 219 181 230 174 235 Z" fill="#FFFFFF" />
+  </g>
+  <g fill="#169A38">
+    <path d="M 270 152 L 366 152 C 373 152 378 157 378 164 L 378 182 C 378 189 373 194 366 194 L 305 194 L 305 298 L 368 298 C 375 298 380 303 380 310 L 380 328 C 380 335 375 340 368 340 L 270 340 C 263 340 258 335 258 328 L 258 164 C 258 157 263 152 270 152 Z" />
+    <path d="M 374 152 L 484 152 C 491 152 496 157 496 164 L 496 182 C 496 189 491 194 484 194 L 448 194 L 448 328 C 448 335 443 340 436 340 L 418 340 C 411 340 406 335 406 328 L 406 194 L 374 194 C 367 194 362 189 362 182 L 362 164 C 362 157 367 152 374 152 Z" />
+    <path d="M 504 152 L 526 152 C 533 152 538 157 538 164 L 538 328 C 538 335 533 340 526 340 L 504 340 C 497 340 492 335 492 328 L 492 164 C 492 157 497 152 504 152 Z" />
+    <path d="M 596 152 L 618 152 C 625 152 630 157 630 164 L 630 328 C 630 335 625 340 618 340 L 596 340 C 589 340 584 335 584 328 L 584 164 C 584 157 589 152 596 152 Z" />
+    <path d="M 690 150 C 728 150 758 178 758 225 C 758 272 728 342 690 342 C 652 342 622 272 622 225 C 622 178 652 150 690 150 Z M 690 188 C 674 188 662 204 662 225 C 662 246 674 304 690 304 C 706 304 718 246 718 225 C 718 204 706 188 690 188 Z" />
+    <path d="M 770 152 L 836 152 C 848 152 856 160 856 172 L 856 182 C 856 192 848 198 838 200 C 818 204 798 210 798 222 C 798 232 808 236 822 238 L 838 240 C 856 244 868 258 868 276 L 868 316 C 868 332 854 342 836 342 L 766 342 C 754 342 746 334 746 322 L 746 312 C 746 302 754 296 764 294 C 786 290 806 284 806 270 C 806 260 794 256 780 254 L 766 250 C 748 246 738 232 738 214 L 738 178 C 738 162 752 152 770 152 Z" />
+  </g>
+  <g id="center-capsule-banner">
+    <rect x="256" y="210" width="606" height="30" rx="15" fill="#FFFFFF" stroke="#169A38" stroke-width="3" />
+    <path d="M 473 226 C 473 221 468 217 463 217 C 458 217 455 220 453 223 C 451 220 448 217 443 217 C 438 217 433 221 433 226 C 433 234 443 239 453 245 C 463 239 473 234 473 226 Z" fill="#EF2626" />
+    <text x="640" y="231" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" letter-spacing="0.28em" fill="#EF2626" text-anchor="middle" dominant-baseline="middle">
+      BY ASHONIKA
+    </text>
+  </g>
+  <text x="535" y="350" font-family="'Alex Brush', 'Dancing Script', 'Brush Script MT', 'Great Vibes', cursive" font-size="36" font-weight="400" font-style="italic" fill="#EF2626" text-anchor="middle" letter-spacing="0.04em">
+    Conscious Choices, Beautifully Made
+  </text>
+</svg>

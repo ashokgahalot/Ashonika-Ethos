@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#169A38" stroke-width="3" />
+  <circle cx="46" cy="50" r="30" fill="#169A38" />
+  <!-- Bulb Screw Base -->
+  <rect x="70" y="38" width="6" height="24" rx="2" fill="#169A38" />
+  <rect x="77" y="42" width="5" height="16" rx="2" fill="#169A38" />
+  <!-- Plant Sprout Inside Bulb -->
+  <path d="M 44 64 C 42 58 45 50 51 44 C 57 38 63 34 65 26" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 50 49 C 48 35 58 26 70 25 C 71 36 61 46 50 49 Z" fill="#FFFFFF" />
+  <path d="M 44 57 C 35 50 37 41 48 39 C 50 47 48 54 44 57 Z" fill="#FFFFFF" />
+  <!-- Accent Red Heart at bottom right -->
+  <path d="M 32 30 C 32 25 27 21 22 21 C 17 21 14 24 12 27 C 10 24 7 21 2 21 C -3 21 -8 25 -8 30 C -8 38 2 43 12 49 C 22 43 32 38 32 30 Z" transform="translate(18, 5) scale(0.4)" fill="#EF2626" />
+</svg>
