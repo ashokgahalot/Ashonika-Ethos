@@ -97,7 +97,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenNotify }) => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column: Hero Visual Showcase with Smooth Entrance */}
+          {/* Right Column: Hero Visual Showcase with Video of Girl Applying Multani Mitti */}
           <motion.div
             initial="hidden"
             animate="visible"
@@ -106,34 +106,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenNotify }) => {
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Outer decorative frame */}
-              <div className="relative aspect-16/9 lg:aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#E5E7EB] bg-[#FBFDFB] group">
-                <img
-                  src={heroImage}
-                  alt="A beautiful woman gently applying natural golden Multani Mitti clay powder mask to her face and hair"
-                  className="w-full h-full object-cover img-zoom"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F10]/50 via-transparent to-transparent opacity-50 pointer-events-none" />
-
-                {/* Floating caption card */}
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E5E7EB] text-[#111F15] shadow-sm">
-                  <div className="flex items-center justify-between text-[11px] font-sans tracking-widest uppercase text-[#6B7280] mb-1 font-bold">
-                    <span>Face & Hair Clay Ritual</span>
-                    <span className="text-[#169A38] font-bold">Volume 01</span>
-                  </div>
-                  <p className="font-serif text-base sm:text-lg leading-snug">
-                    Ancient Indian Earth. Reimagined for Face & Hair.
-                  </p>
-                </div>
-              </div>
-
-              {/* Artisan stamp marker without any logo image */}
-              <div className="hidden sm:flex absolute -bottom-4 -left-4 p-3.5 bg-white border border-[#E2E8F0] rounded-xl shadow-lg items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#D81A27] animate-pulse" />
-                <div className="text-[11px] text-[#64748B]">
-                  <span className="block font-bold text-[#0B172B]">Inaugural Batch</span>
-                  <span>Pure Natural Formulations</span>
-                </div>
+              <div className="relative aspect-16/9 lg:aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#E5E7EB] bg-[#FBFDFB]">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster={heroImage}
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/hero_multani_face_video.mp4" type="video/mp4" />
+                  <img
+                    src={heroImage}
+                    alt="A woman gently applying natural golden Multani Mitti clay mask to her face"
+                    className="w-full h-full object-cover"
+                  />
+                </video>
               </div>
             </div>
           </motion.div>
